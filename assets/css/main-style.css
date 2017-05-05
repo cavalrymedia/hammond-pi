@@ -1,0 +1,97 @@
+
+	/* main elements... */
+	
+	html, body
+	{
+		height: 100%;
+	}
+	
+	body
+	{
+		background-color: #0d203c;
+		color: #fff;
+	}
+	
+	
+	
+	
+	/* navigation... */
+
+	nav
+	{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 10;
+		
+		margin-top: 4.17%;
+		margin-left: 4.17%;
+		margin-right: 4.17%;
+	}
+	
+	nav .pull-left
+	{
+		width: 70%;
+		margin-top: -13px; /* half of the logo height */
+	}
+	
+	nav .pull-left a
+	{
+		width: 12.99%;
+		display: inline-block;
+		margin-right: -2px; /* to cater for the inline-block whitespace */
+		vertical-align: middle;
+		
+		font-size: 10px;
+		line-height: 1em;
+		text-transform: uppercase;
+	}
+	
+	nav .pull-left a.nav-logo
+	{
+		width: 19.48%;
+	}
+	
+	nav .pull-left a.nav-logo img
+	{
+		height: 26px;
+	}
+	
+	nav:after
+	{
+		content: '';
+		display: block;
+		clear: both;
+	}
+	
+	
+	
+	
+	/* splash screen container... */
+	
+	.splash-screen-container
+	{
+		position: absolute;
+		z-index: 5;
+		
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		
+		background-image: url(./images/splash-background.jpg);
+		background-size: cover;
+		background-position: top right;
+	}
+	
+	
+	
+	
+	/* containers... */
+
+	.main-container
+	{
+		margin-left: 16.67%;
+		margin-right: 16.67%;
+	}
