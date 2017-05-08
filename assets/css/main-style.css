@@ -10,6 +10,25 @@
 	{
 		background-color: #0d203c;
 		color: #fff;
+		
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
+		
+		font-size: 10px;
+	}
+	
+	.font-montserrat
+	{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		/*font-weight: 600;*/
+	}
+	
+	.font-open-sans
+	{
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
+		/*font-weight: 700;*/
 	}
 	
 	
@@ -28,6 +47,13 @@
 		margin-top: 4.17%;
 		margin-left: 4.17%;
 		margin-right: 4.17%;
+		
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		
+		font-size: 1.2em;
+		letter-spacing: 0.7px;
+		line-height: 1em;
 	}
 	
 	nav .pull-left
@@ -36,26 +62,78 @@
 		margin-top: -13px; /* half of the logo height */
 	}
 	
-	nav .pull-left a
+	nav ul
 	{
-		width: 12.99%;
-		display: inline-block;
-		margin-right: -2px; /* to cater for the inline-block whitespace */
-		vertical-align: middle;
-		
-		font-size: 10px;
-		line-height: 1em;
-		text-transform: uppercase;
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		display: block;
 	}
 	
-	nav .pull-left a.nav-logo
+	nav ul li
+	{
+		display: inline-block;
+		width: 12.99%;
+		
+		margin-right: -2px; /* to cater for the inline-block whitespace */
+		vertical-align: middle;
+	}
+	
+	nav ul li.nav-logo
 	{
 		width: 19.48%;
 	}
 	
-	nav .pull-left a.nav-logo img
+	nav a
 	{
-		height: 26px;
+		color: #fff;
+		display: inline-block;
+		position: relative;
+	}
+	
+	nav a:link,
+	nav a:visited,
+	nav a:hover,
+	nav a:active,
+	nav a:focus
+	{
+		text-decoration: none;
+		color: #fff;
+	}
+	
+	nav li a:after
+	{
+		content: '';
+		display: block;
+		
+		height: 1px;
+		width: 0%;
+		background-color: #ff671f;
+		
+		position: absolute;
+		top: 5px;
+		left: 50%;
+		
+		transition: all 0.18s ease-out;
+		-moz-transition: all 0.18s ease-out;
+		-webkit-transition: all 0.18s ease-out;
+	}
+	
+	nav li a:hover:after
+	{
+		width: 100%;
+		left: 0;
+	}
+	
+	nav li:first-child a:after
+	{
+		display: none;
+	}
+	
+	nav .nav-logo img
+	{
+		height: 27px;
 	}
 	
 	nav:after
